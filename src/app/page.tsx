@@ -12,6 +12,15 @@ import {
 } from "react-icons/io5";
 import { NavSubItem } from "@/components/NavSubItem";
 import Image from "next/image";
+import image1 from "../../public/assets/icons/image_2.png";
+import image2 from "../../public/assets/icons/image_3.png";
+import image3 from "../../public/assets/icons/image_4.png";
+import image4 from "../../public/assets/icons/image_5.png";
+import image5 from "../../public/assets/icons/image_6.png";
+import image6 from "../../public/assets/icons/image_7.png";
+import image7 from "../../public/assets/icons/image_8.png";
+import image8 from "../../public/assets/icons/image_8_1.png";
+import disc from "../../public/assets/icons/capa_disc.jpg";
 
 export default function Home() {
   return (
@@ -70,6 +79,190 @@ export default function Home() {
               />
             </div>
           </div>
+
+          <section className="p-20">
+            <div>
+              <h1 className="text-white text-2xl font-bold">
+                Flow: toque o que você sente
+              </h1>
+              <p className="text-zinc-400">
+                Um mix infinito e personalizado das músicas que você ama e
+                também de novas descobertas.
+              </p>
+            </div>
+            <div className="flex pt-8 justify-between">
+              <div className="text-white text-center cursor-pointer">
+                <div>
+                  <Image
+                    src={image8.src}
+                    width={128}
+                    height={128}
+                    alt={""}
+                    className="absolute"
+                  />
+
+                  <Image src={image7.src} width={128} height={128} alt={""} />
+                </div>
+                Flow
+              </div>
+              <div className="text-white text-center cursor-pointer">
+                <div className="rounded-full bg-zinc-800 hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+                  <Image src={image1.src} width={128} height={128} alt={""} />
+                </div>
+                Treino
+              </div>
+              <div className="text-white text-center cursor-pointer">
+                <div className="rounded-full bg-zinc-800 hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+                  <Image src={image2.src} width={128} height={128} alt={""} />
+                </div>
+                Festa
+              </div>
+              <div className="text-white text-center cursor-pointer">
+                <div className="rounded-full bg-zinc-800 hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+                  <Image src={image3.src} width={128} height={128} alt={""} />
+                </div>
+                Relax
+              </div>
+              <div className="text-white text-center cursor-pointer">
+                <div className="rounded-full bg-zinc-800 hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+                  <Image src={image5.src} width={128} height={128} alt={""} />
+                </div>
+                Na bad
+              </div>
+              <div className="text-white text-center cursor-pointer">
+                <div className="rounded-full bg-zinc-800 hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+                  <Image src={image4.src} width={128} height={128} alt={""} />
+                </div>
+                Você e eu
+              </div>
+              <div className="text-white text-center cursor-pointer">
+                <div className="rounded-full bg-zinc-800 hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+                  <Image src={image6.src} width={128} height={128} alt={""} />
+                </div>
+                Foco
+              </div>
+            </div>
+          </section>
+          <section className="pl-20 pr-20">
+            <div>
+              <h1 className="text-white text-2xl font-bold">
+                Mixes inspirados por
+              </h1>
+              <p className="text-zinc-400">
+                Descubra faixas similares aos seus hits favoritos.
+              </p>
+            </div>
+            <div className="grid grid-cols-3 gap-3 text-white pt-8">
+              <div className="bg-zinc-800 rounded-lg flex gap-3 items-center mr-5 cursor-pointer hover:scale-105">
+                <Image
+                  src={disc.src}
+                  width={80}
+                  height={80}
+                  alt={""}
+                  className="rounded-lg"
+                />
+                <h1>
+                  In Aiw<p className="text-zinc-400">por Holin</p>
+                </h1>
+              </div>
+              <div className="bg-zinc-800 rounded-lg flex gap-3 items-center mr-5 cursor-pointer hover:scale-105">
+                <Image
+                  src={disc.src}
+                  width={80}
+                  height={80}
+                  alt={""}
+                  className="rounded-lg"
+                />
+                <h1>
+                  In Aiw<p className="text-zinc-400">por Holin</p>
+                </h1>
+              </div>
+              <div className="bg-zinc-800 rounded-lg flex gap-3 items-center cursor-pointer hover:scale-105">
+                <Image
+                  src={disc.src}
+                  width={80}
+                  height={80}
+                  alt={""}
+                  className="rounded-lg"
+                />
+                <h1>
+                  In Aiw<p className="text-zinc-400">por Holin</p>
+                </h1>
+              </div>
+              <div className="bg-zinc-800 rounded-lg flex gap-3 items-center mr-5 cursor-pointer hover:scale-105">
+                <Image
+                  src={disc.src}
+                  width={80}
+                  height={80}
+                  alt={""}
+                  className="rounded-lg"
+                />
+                <h1>
+                  In Aiw<p className="text-zinc-400">por Holin</p>
+                </h1>
+              </div>
+              <div className="bg-zinc-800 rounded-lg flex gap-3 items-center mr-5 cursor-pointer hover:scale-105">
+                <Image
+                  src={disc.src}
+                  width={80}
+                  height={80}
+                  alt={""}
+                  className="rounded-lg"
+                />
+                <h1>
+                  In Aiw<p className="text-zinc-400">por Holin</p>
+                </h1>
+              </div>
+              <div className="bg-zinc-800 rounded-lg flex gap-3 items-center cursor-pointer hover:scale-105">
+                <Image
+                  src={disc.src}
+                  width={80}
+                  height={80}
+                  alt={""}
+                  className="rounded-lg"
+                />
+                <h1>
+                  In Aiw<p className="text-zinc-400">por Holin</p>
+                </h1>
+              </div>
+              <div className="bg-zinc-800 rounded-lg flex gap-3 items-center mr-5 cursor-pointer hover:scale-105">
+                <Image
+                  src={disc.src}
+                  width={80}
+                  height={80}
+                  alt={""}
+                  className="rounded-lg"
+                />
+                <h1>
+                  In Aiw<p className="text-zinc-400">por Holin</p>
+                </h1>
+              </div>
+              <div className="bg-zinc-800 rounded-lg flex gap-3 items-center mr-5 cursor-pointer hover:scale-105">
+                <Image
+                  src={disc.src}
+                  width={80}
+                  height={80}
+                  alt={""}
+                  className="rounded-lg"
+                />
+                <h1>
+                  In Aiw<p className="text-zinc-400">por Holin</p>
+                </h1>
+              </div>
+              <div className="bg-zinc-800 rounded-lg flex gap-3 items-center cursor-pointer hover:scale-105">
+                <Image
+                  src={disc.src}
+                  width={80}
+                  height={80}
+                  alt={""}
+                  className="rounded-lg"
+                />
+                <h1>
+                  In Aiw<p className="text-zinc-400">por Holin</p>
+                </h1>
+              </div>
+            </div>
+          </section>
         </div>
       </section>
 
