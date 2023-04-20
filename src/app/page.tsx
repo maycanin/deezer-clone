@@ -1,6 +1,6 @@
 import { NavItem } from "@/components/NavItem";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
-import { ImMusic } from "react-icons/im";
+import { ImMusic, ImAngry } from "react-icons/im";
 import { FaMicrophoneAlt } from "react-icons/fa";
 import { BiRadio } from "react-icons/bi";
 import {
@@ -9,6 +9,10 @@ import {
   IoSearch,
   IoCloseOutline,
   IoNotifications,
+  IoPlaySkipBack,
+  IoPause,
+  IoPlaySkipForward,
+  IoAddOutline,
 } from "react-icons/io5";
 import { NavSubItem } from "@/components/NavSubItem";
 import Image from "next/image";
@@ -95,49 +99,49 @@ export default function Home() {
                 <div>
                   <Image
                     src={image8.src}
-                    width={128}
-                    height={128}
+                    width={150}
+                    height={150}
                     alt={""}
                     className="absolute"
                   />
 
-                  <Image src={image7.src} width={128} height={128} alt={""} />
+                  <Image src={image7.src} width={150} height={150} alt={""} />
                 </div>
                 Flow
               </div>
               <div className="text-white text-center cursor-pointer">
                 <div className="rounded-full bg-zinc-800 hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
-                  <Image src={image1.src} width={128} height={128} alt={""} />
+                  <Image src={image1.src} width={150} height={150} alt={""} />
                 </div>
                 Treino
               </div>
               <div className="text-white text-center cursor-pointer">
                 <div className="rounded-full bg-zinc-800 hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
-                  <Image src={image2.src} width={128} height={128} alt={""} />
+                  <Image src={image2.src} width={150} height={150} alt={""} />
                 </div>
                 Festa
               </div>
               <div className="text-white text-center cursor-pointer">
                 <div className="rounded-full bg-zinc-800 hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
-                  <Image src={image3.src} width={128} height={128} alt={""} />
+                  <Image src={image3.src} width={150} height={150} alt={""} />
                 </div>
                 Relax
               </div>
               <div className="text-white text-center cursor-pointer">
                 <div className="rounded-full bg-zinc-800 hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
-                  <Image src={image5.src} width={128} height={128} alt={""} />
+                  <Image src={image5.src} width={150} height={150} alt={""} />
                 </div>
                 Na bad
               </div>
               <div className="text-white text-center cursor-pointer">
                 <div className="rounded-full bg-zinc-800 hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
-                  <Image src={image4.src} width={128} height={128} alt={""} />
+                  <Image src={image4.src} width={150} height={150} alt={""} />
                 </div>
                 Você e eu
               </div>
               <div className="text-white text-center cursor-pointer">
                 <div className="rounded-full bg-zinc-800 hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
-                  <Image src={image6.src} width={128} height={128} alt={""} />
+                  <Image src={image6.src} width={150} height={150} alt={""} />
                 </div>
                 Foco
               </div>
@@ -266,7 +270,38 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="fixed bottom-0 h-20 w-full bg-zinc-800 border-t border-t-zinc-700"></footer>
+      <footer className="fixed bottom-0 h-20 w-full bg-zinc-800 border-t border-t-zinc-700 flex items-center pl-6">
+        <div className="flex text-white gap-6 items-center">
+          <IoPlaySkipBack size={30} />
+          <IoPause size={50} />
+          <IoPlaySkipForward size={30} />
+        </div>
+        <div className="flex ml-36 mr-36 text-white items-center flex-col w-full">
+          <div className="flex items-center w-full justify-between">
+            <div className="flex items-center ml-10">
+              <div className="bg-zinc-600 rounded-sm pl-1 pr-1 mr-2">FLOW</div>
+              <a href="#" className="font-bold hover:overline">
+                Regis Danese
+              </a>
+              <span className="font-bold m-1">.</span>
+              <a href="#" className="font-bold hover:overline">
+                Família
+              </a>
+            </div>
+            <div className="flex items-center gap-3 mr-10">
+              <IoAddOutline size={36} className="text-white" />
+              <IoHeartOutline size={28} className="text-white" />
+              <ImAngry size={22} className="text-white" />
+            </div>
+          </div>
+          <div className="flex items-center w-full">
+            1:32
+            <div className="h-1 flex-1 ml-3 bg-red-700"></div>
+            <div className="h-1 flex-1 mr-3 bg-white"></div>
+            3:04
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
