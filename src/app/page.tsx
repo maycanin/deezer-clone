@@ -13,6 +13,10 @@ import {
   IoPause,
   IoPlaySkipForward,
   IoAddOutline,
+  IoRepeatOutline,
+  IoVolumeHighOutline,
+  IoShuffle,
+  IoOptions,
 } from "react-icons/io5";
 import { NavSubItem } from "@/components/NavSubItem";
 import Image from "next/image";
@@ -272,9 +276,18 @@ export default function Home() {
 
       <footer className="fixed bottom-0 h-20 w-full bg-zinc-800 border-t border-t-zinc-700 flex items-center pl-6">
         <div className="flex text-white gap-6 items-center">
-          <IoPlaySkipBack size={30} />
-          <IoPause size={50} />
-          <IoPlaySkipForward size={30} />
+          <IoPlaySkipBack
+            size={30}
+            className="hover:bg-zinc-500 cursor-pointer rounded-full"
+          />
+          <IoPause
+            size={50}
+            className="hover:bg-zinc-500 cursor-pointer rounded-full"
+          />
+          <IoPlaySkipForward
+            size={30}
+            className="hover:bg-zinc-500 cursor-pointer rounded-full"
+          />
         </div>
         <div className="flex ml-36 mr-36 text-white items-center flex-col w-full">
           <div className="flex items-center w-full justify-between">
@@ -289,9 +302,18 @@ export default function Home() {
               </a>
             </div>
             <div className="flex items-center gap-3 mr-10">
-              <IoAddOutline size={36} className="text-white" />
-              <IoHeartOutline size={28} className="text-white" />
-              <ImAngry size={22} className="text-white" />
+              <IoAddOutline
+                size={34}
+                className="hover:bg-zinc-500 cursor-pointer rounded-full"
+              />
+              <IoHeartOutline
+                size={26}
+                className="hover:bg-zinc-500 cursor-pointer rounded-full"
+              />
+              <ImAngry
+                size={20}
+                className="hover:bg-zinc-500 cursor-pointer rounded-full"
+              />
             </div>
           </div>
           <div className="flex items-center w-full">
@@ -299,6 +321,37 @@ export default function Home() {
             <div className="h-1 flex-1 ml-3 bg-red-700"></div>
             <div className="h-1 flex-1 mr-3 bg-white"></div>
             3:04
+          </div>
+        </div>
+        <div className="flex items-center text-white w-[700px]">
+          <div className="flex items-center gap-4">
+            <IoRepeatOutline
+              size={30}
+              className="hover:bg-zinc-500 cursor-pointer rounded-full"
+            />
+            <IoShuffle
+              size={30}
+              className="hover:bg-zinc-500 cursor-pointer rounded-full"
+            />
+            <IoVolumeHighOutline
+              size={30}
+              className="hover:bg-zinc-500 cursor-pointer rounded-full"
+            />
+            <IoOptions
+              size={30}
+              className="hover:bg-zinc-500 cursor-pointer rounded-full"
+            />
+            <hr className="h-12 bg-zinc-400 border-none w-px" />
+          </div>
+          <div className="flex ml-4 items-center">
+            <Image
+              src={disc.src}
+              width={40}
+              height={40}
+              alt={""}
+              className="rounded-lg mr-3"
+            />
+            Fila de espera
           </div>
         </div>
       </footer>
