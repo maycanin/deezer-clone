@@ -278,42 +278,39 @@ export default function Home() {
         <div className="flex text-white gap-6 items-center">
           <IoPlaySkipBack
             size={30}
-            className="hover:bg-zinc-500 cursor-pointer rounded-full"
+            className="hover:bg-zinc-500 cursor-pointer rounded-xl"
           />
           <IoPause
             size={50}
-            className="hover:bg-zinc-500 cursor-pointer rounded-full"
+            className="hover:bg-zinc-500 cursor-pointer rounded-xl"
           />
           <IoPlaySkipForward
             size={30}
-            className="hover:bg-zinc-500 cursor-pointer rounded-full"
+            className="hover:bg-zinc-500 cursor-pointer rounded-xl"
           />
         </div>
         <div className="flex ml-36 mr-36 text-white items-center flex-col w-full">
           <div className="flex items-center w-full justify-between">
             <div className="flex items-center ml-10">
               <div className="bg-zinc-600 rounded-sm pl-1 pr-1 mr-2">FLOW</div>
-              <a href="#" className="font-bold hover:overline">
+              <a href="#" className="font-bold hover:underline">
                 Regis Danese
               </a>
-              <span className="font-bold m-1">.</span>
-              <a href="#" className="font-bold hover:overline">
+              <span className="font-bold m-1 text-2xl">-</span>
+              <a href="#" className="font-bold hover:underline">
                 Família
               </a>
             </div>
-            <div className="flex items-center gap-3 mr-10">
-              <IoAddOutline
-                size={34}
-                className="hover:bg-zinc-500 cursor-pointer rounded-full"
-              />
-              <IoHeartOutline
-                size={26}
-                className="hover:bg-zinc-500 cursor-pointer rounded-full"
-              />
-              <ImAngry
-                size={20}
-                className="hover:bg-zinc-500 cursor-pointer rounded-full"
-              />
+            <div className="flex items-center mr-10">
+              <div className="hover:bg-zinc-500 cursor-pointer rounded-xl mr-2">
+                <IoAddOutline size={34} />
+              </div>
+              <div className="hover:bg-zinc-500 cursor-pointer rounded-xl p-1 mr-3">
+                <IoHeartOutline size={26} />
+              </div>
+              <div className="hover:bg-zinc-500 cursor-pointer rounded-xl p-2 mr">
+                <ImAngry size={20} />
+              </div>
             </div>
           </div>
           <div className="flex items-center w-full">
@@ -325,31 +322,27 @@ export default function Home() {
         </div>
         <div className="flex items-center text-white w-[700px]">
           <div className="flex items-center gap-4">
-            <IoRepeatOutline
-              size={30}
-              className="hover:bg-zinc-500 cursor-pointer rounded-full"
-            />
-            <IoShuffle
-              size={30}
-              className="hover:bg-zinc-500 cursor-pointer rounded-full"
-            />
-            <IoVolumeHighOutline
-              size={30}
-              className="hover:bg-zinc-500 cursor-pointer rounded-full"
-            />
-            <IoOptions
-              size={30}
-              className="hover:bg-zinc-500 cursor-pointer rounded-full"
-            />
+            <div className="hover:bg-zinc-500 cursor-pointer rounded-full p-1">
+              <IoRepeatOutline size={30} />
+            </div>
+            <div className="hover:bg-zinc-500 cursor-pointer rounded-full p-1">
+              <IoShuffle size={30} />
+            </div>
+            <div className="hover:bg-zinc-500 cursor-pointer rounded-full p-1">
+              <IoVolumeHighOutline size={30} />
+            </div>
+            <div className="hover:bg-zinc-500 cursor-pointer rounded-full p-1">
+              <IoOptions size={30} />
+            </div>
             <hr className="h-12 bg-zinc-400 border-none w-px" />
           </div>
-          <div className="flex ml-4 items-center">
+          <div className="flex ml-4 items-center cursor-pointer hover:underline">
             <Image
               src={disc.src}
               width={40}
               height={40}
               alt={""}
-              className="rounded-lg mr-3"
+              className="rounded-lg mr-3 hover: scale-105"
             />
             Fila de espera
           </div>
